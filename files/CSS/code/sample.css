@@ -1,0 +1,11 @@
+/* example on defining external styles */
+h3{
+  color:red;
+}
+p{
+  color:blue;	
+}
+
+/* Note:
+  save this file with a name "sample.css" in current folder
+*/

@@ -1,0 +1,43 @@
+<details>
+        <summary class="pg">program</summary>
+        <div id="program-code" class="code-display program"></div>
+        <details>
+            <summary>Output:</summary>
+            <p class="output">pi=3.140000</p>
+        </details>
+    </details>
+
+    <script>
+        const programCode = `
+#include <stdio.h>
+
+int main()
+{
+    const float pi = 3.14;
+    printf("pi = %f", pi);
+
+    return 0;
+}
+        `;
+        document.getElementById('program-code').textContent = programCode;
+    </script>
+
+
+//css
+
+            <details>
+                <summary class="pg" align="right">External style Code</summary>
+                <div id="code-3" class="code-display"></div>
+                
+                <summary class="pg" align="right">CSS code</summary>
+                <hd>CSS code</hd>
+                <div id="css-3" class="code-display"></div>
+                <details><summary><button class="run"><a href="" onclick="window.open('../CSS/code/ex41.html')" target="_blank" class="run">Run</a></button></summary></details>
+            </details>
+
+        
+             <details>
+                <summary class="pg" align="right">External style Code</summary>
+                <div id="code-3" class="code-display"></div>
+                <details><summary><button class="run"><a href="" onclick="window.open('../CSS/code/ex41.html')" target="_blank" class="run">Run</a></button></summary></details>
+            </details>

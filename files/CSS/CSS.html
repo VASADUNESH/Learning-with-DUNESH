@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../style.css">
+    <script src="css.js"></script>
+    <style>
+        .code-display{
+            background-color: grey;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <div id="Intro">
+        <fieldset>
+            <legend>Introduction to CSS</legend>
+            <li>CSS3 --version:3, 1996, W3C Org.</li>
+            <li>CSS3 used looks, style and feel of html elements.</li>
+            <li>Style: group of properties or attributes or rules.</li>
+        </fieldset> <br><br><br>
+    </div>
+    
+    <div id="css_style">
+        <fieldset>
+            <legend>Styles (scope)</legend>
+            <li>1. Inline style</li>
+            <details>
+                <summary class="pg" align="right">Inline style Code</summary>
+                <div id="code-1" class="code-display"></div>
+                <details><summary><button class="run"><a href="" onclick="window.open('../CSS/code/ex39.html')" target="_blank" class="run">Run</a></button></summary></details>
+            </details>
+            
+            <li>2. Internal style</li>
+            <details>
+                <summary class="pg" align="right">Internal style Code</summary>
+                <div id="code-2" class="code-display"></div>
+                <details><summary><button class="run"><a href="" onclick="window.open('../CSS/code/ex40.html')" target="_blank" class="run">Run</a></button></summary></details>
+            </details>
+            <li>3. External style / Global style</li>
+            <details>
+                <summary class="pg" align="right">External style Code</summary>
+                <div id="code-3" class="code-display"></div>
+                
+                <summary class="pg" align="right">CSS code</summary>
+                <hd>CSS code</hd>
+                <div id="css-3" class="code-display"></div>
+                <details><summary><button class="run"><a href="" onclick="window.open('../CSS/code/ex41.html')" target="_blank" class="run">Run</a></button></summary></details>
+            </details>
+
+            <details>
+                <summary class="pg" align="right">Applying on all style Code</summary>
+                <div id="code-4" class="code-display"></div>
+                
+                <summary class="pg" align="right">CSS code</summary>
+                <hd>CSS code</hd>
+                <div id="css-4" class="code-display"></div>
+                <details><summary><button class="run"><a href="" onclick="window.open('../CSS/code/ex42.html')" target="_blank" class="run">Run</a></button></summary></details>
+            </details>
+        </fieldset>
+    </div> <br> <br><br>
+
+    <div id="css_properties">
+        <fieldset>
+            <legend>CSS Properties</legend>
+            Properties: "value" or attribute: "value"
+            <details>
+                <summary class="pg" align="right">Applying all styles Code</summary>
+                <div id="code-5" class="code-display"></div>
+                
+                <summary class="pg" align="right">CSS code</summary>
+                <hd>CSS code</hd>
+                <div id="css-5" class="code-display"></div>
+                <details><summary><button class="run"><a href="" onclick="window.open('../CSS/code/ex43.html')" target="_blank" class="run">Run</a></button></summary></details>
+            </details>
+
+        </fieldset>
+    </div> <br><br><br>
+
+    <div id="css_color">
+        <fieldset>
+            <legend>CSS Color</legend>
+            <p>Can be represent in 3 types:</p>
+                <div style="columns: 3;">
+                    <div >
+                        <li>1. color: "Name"</li>
+                        <div class="box" style="background-color: blue;"></div>
+                    </div>
+                    <div >
+                        <li>2. color: ["#fff",#ffffff]</li>
+                        <div class="box" style="background-color: #fff;"></div>
+                    </div>
+                    <div >
+                        <li>3. color: rgb(0,255,225)</li>
+                        <div class="box" style="background-color: rgb(0,255,255);"></div>
+                    </div> 
+                </div>
+                <details>
+                    <summary class="pg" align="right">CSS colors Code</summary>
+                    <div id="code-6" class="code-display"></div>
+                    <details><summary><button class="run"><a href="" onclick="window.open('../CSS/code/ex44.html')" target="_blank" class="run">Run</a></button></summary></details>
+                </details>
+        </fieldset>
+    </div> <br><br><br>
+
+    <div id="borders">
+        <fieldset>
+            <legend>Border</legend>
+            border: [solid/ double/ dotted/ dashed/ inset/ outset/ ridge/ groove, none]; <br>
+            or <br>
+            border-left / border-right / border-top / border-bottom
+            <br> <br>
+            outline:None;
+            <details>
+                <summary class="pg" align="right">Code: Border & outline</summary>
+                <div id="code-7" class="code-display"></div>
+                <details><summary><button class="run"><a href="" onclick="window.open('../CSS/code/ex45.html')" target="_blank" class="run">Run</a></button></summary></details>
+            </details>
+        </fieldset>
+    </div> <br> <br> <br>
+
+    <div id="shadow">
+        <fieldset>
+            <legend>Shadow</legend>
+            <p>Shadow : x_px y_px z_px color <br> </p>
+            <details>
+                <summary>Shadow 2 types:</summary>
+                <li>1.Box Shadow</li>
+                <li>2.text shadow <br></li>
+                
+            </details>
+            <details>
+                <summary class="pg" align="right">Code: Shadow</summary>
+                <div id="code-8" class="code-display"></div>
+                <details><summary><button class="run"><a href="" onclick="window.open('../CSS/code/ex46.html')" target="_blank" class="run">Run</a></button></summary></details>
+            </details>
+        </fieldset>
+    </div> <br><br><br>
+
+    <div id="font_and_text_settings">
+        <fieldset>
+            <legend>Font and Text Settings</legend>
+            <p>
+                <hd>font-size:</hd> [num px, num %];<br>#default size "16px"<br><br>
+                font-style: [normal / italic];<br> <br>
+                font-weight: [bold, num px];<br><br>
+                font-family: ['MV Boli','Times new roman']; #every developer writing at least 4 family models<br> <br>
+            </p>
+            <details>
+                <summary class="pg" align="right">Code: Font and text settings</summary>
+                <div id="code-9" class="code-display"></div>
+                <details><summary><button class="run"><a href="" onclick="window.open('../CSS/code/ex47.html')" target="_blank" class="run">Run</a></button></summary></details>
+            </details>
+        </fieldset>
+    </div> <br> <br> <br>
+
+    <div id="spacing">
+        <fieldset>
+            <legend>Spacing</legend>
+            letter-spacing: [num px]; <br>
+                <span class="sty" style="letter-spacing: 7px;">Dunesh</span> <br> <br>
+
+                word-spacing: <br>
+                <span class="sty" style="word-spacing: 40px;">Vasa Dunesh</span> <br> <br>
+                line-height: <br>
+                <span class="sty" style="line-height:  44px;">
+                    Vasa
+                    Dunesh</span> <br>
+
+                <hd>text-decoration: </hd>[underline, line-through, overline, None];
+                <p class="sty"style="text-decoration: underline;">Dunesh</p>
+
+                <hd>text-align: </hd>[justify/L/R/T/B/C];
+
+                <details>
+                    <summary class="pg" align="right">Code: Spacing</summary>
+                    <div id="code-10" class="code-display"></div>
+                    <details><summary><button class="run"><a href="" onclick="window.open('../CSS/code/ex47.html')" target="_blank" class="run">Run</a></button></summary></details>
+                </details>
+        </fieldset>
+    </div> <br> <br><br>
+
+
+
+    <div class="overflow_column">
+        <fieldset>
+            <legend>Overflow Column</legend>
+                <p>Column: 2 [no.of columns];</p>
+                <p>overflow: [hidden/auto/scroll];</p>
+                <details>
+                    <summary class="pg" align="right">Code: Overflow Column</summary>
+                    <div id="code-11" class="code-display"></div>
+                    <details><summary><button class="run"><a href="" onclick="window.open('../CSS/code/ex48.html')" target="_blank" class="run">Run</a></button></summary></details>
+                </details>
+        </fieldset>
+    </div><br><br><br>
+
+    <div class="background">
+        <fieldset>
+            <legend>Background</legend>
+            <p>
+                background-image:url(" "); <br> <br>
+                background-repeat: [both/ no-repeat/ repeat-x/ repeat-y];<br> <br>
+                background-position: [left-top/ left-center/ left-bottom / center-top/ center-center/ center-bottom/ right-top/ right-center/ right-bottom]; <br><br>
+                background-size: [(width px,height px)/ auto/ cover]; #auto means original size <br><br>
+                background-attachment: [scroll/fixed];<br><br>
+                background-size: 100% 100%;<br><br>
+                <details>
+                    <summary class="pg" align="right">Code: Playing with background</summary>
+                    <div id="code-12" class="code-display"></div>
+                    <details><summary><button class="run"><a href="" onclick="window.open('../CSS/code/ex49.html')" target="_blank" class="run">Run</a></button></summary></details>
+                </details>
+    
+                <hd>opacity: </hd>[0 to 1] # Control the transparency <br>
+                0 means full transparency <br> 1 means no transparency <br> <br>
+
+
+            </p>
+        </fieldset>
+        
+    </div> <br><br><br>
+
+    <div id="gradient">
+        <fieldset>
+            <legend>Gradient</legend>
+            <p>It's multi color background.</p>
+            <details><summary>Three types</summary>
+                <li><details><summary><hd>1. Linear</hd></summary>
+                    <li></hd>Syntax: </hd></li>
+                    <li>background: linear-gradient(direction,color1 %,color2 %,...,color n %)</li>
+                    <li>In direction: [to left/ to right/ to top/ to bottom/ degrees like 30 deg]</li>
+                    <details>
+                        <summary class="pg" align="right">Code: linear-gradient</summary>
+                        <div id="code-13" class="code-display"></div>
+                        <details><summary><button class="run"><a href="" onclick="window.open('../CSS/code/ex50.html')" target="_blank" class="run">Run</a></button></summary></details>
+                    </details>
+                </details></li> <br> 
+
+                <li><details><summary><hd>2. Radical</hd></summary>
+                    <li></hd>Syntax: </hd></li>
+                    <li>background: radical-gradient(shape,color1 %,color2 %,...,color n %)</li>
+                    <li>In shape: [any shape] #default oval</li>
+                    <details>
+                        <summary class="pg" align="right">Code: radical-gradient</summary>
+                        <div id="code-14" class="code-display"></div>
+                        <details><summary><button class="run"><a href="" onclick="window.open('../CSS/code/ex51.html')" target="_blank" class="run">Run</a></button></summary></details>
+                    </details>
+                </details></li> <br> 
+                
+                <li><details><summary><hd>3. Conic</hd></summary>
+                    <li></hd>Syntax: </hd></li>
+                    <li>background: conic-gradient(color1 %,color2 %,...,color n %)</li>
+                    <li>cone shape will come in middle of the screen</li>
+                    <details>
+                        <summary class="pg" align="right">Code: Conic-gradient</summary>
+                        <div id="code-15" class="code-display"></div>
+                        <details><summary><button class="run"><a href="" onclick="window.open('../CSS/code/ex51.html')" target="_blank" class="run">Run</a></button></summary></details>
+                    </details>
+                </details></li> <br> 
+                
+            </details> <br>
+
+        </fieldset>
+    </div>
+    
+
+    
+</body>
+</html>

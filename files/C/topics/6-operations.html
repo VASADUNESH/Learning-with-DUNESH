@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../style.css">
+
+</head>
+<body>
+    
+    <fieldset><legend>Operators</legend>
+    <p>Operator is a special symbol designed for a particular task. C comes with 44 operators and 14 separators [, . : ; “ “ ‘ ‘ { },…. ] Operator works on operands. </p>
+    <details>
+        <summary>Based on no of operands participating in operation, the operators divided into 3 types.</summary>
+        <li><hd>1. Unary Operator: </hd>Require one operand. <br>Eg: a++, a--, --a, ++a, sizeof(a), ~a, !a, +a, -a,…..</li>
+        <li><hd>2. Binary operator:</hd> Require two operands. <br>Eg: a+b, a-b, a>b, a<=b, a!=b, a<<b, a>>b,…. </li>
+        <li><hd>3. Ternary operator: </hd> Require three expressions / operands.<br>Eg: conditional part ? true part : false part;</li>
+    </details>
+    </fieldset> <br><br>
+    <p>Based on operation the operators divided into several types.</p>
+    <fieldset id="Assignment_operator">
+        <legend>1.Assignment operator [ = ]: </legend>
+        <li >
+            It copies the value on its right side into the variable on its left side. In assignment operation, the left side operand should be a variable. i.e. expressions not allowed on left side.<br> <br>Eg: <br>a=10;<br>b=1.2;<br>c=’X’;<br>d=”abc”; => Error => string copy not allowed.<br>e=f=g=100;<br>c=10+20;<br>10+20=30; ==> 30=30 => Error => 30 is constant
+            <details>
+                <summary class="pg">program</summary>
+                <div id="program-code1" class="code-display program"></div>
+                <details>
+                    <summary>Output:</summary>
+                    <p class="output">pi=3.140000</p>
+                </details>
+            </details>
+
+
+
+
+
+
+        </li>
+    </fieldset>
+
+
+
+    <a href="" onclick="window.open('../reference/10-6 operators.pdf')" target="_blank" class="btn">Reference</a>
+    <br><br><br>
+
+    <script>
+        const programCode = `
+#include <stdio.h>
+
+int main()
+{
+    const float pi = 3.14;
+    printf("pi = %f", pi);
+
+    return 0;
+}
+        `;
+        document.getElementById('program-code1').textContent = programCode;
+    </script>
+</body>
+</html>
