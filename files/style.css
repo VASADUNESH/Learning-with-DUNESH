@@ -107,22 +107,23 @@ frame {
 
 /* Media query for mobile view */
 @media only screen and (max-width: 600px) {
-    frameset {
-        display: flex;
-        flex-direction: column;
+    frameset[rows="50px,*"] {
+        display: block;
+        height: 100vh;
+        width: 100vw;
     }
 
-    frameset[rows="50px,*"] {
-        flex-direction: column;
+    frameset[cols="300px,*"] {
+        display: flex;
+        flex-direction: row;
+        height: calc(100vh - 50px);
     }
 
     frame[name="lbody"] {
-        height: auto;
-        width: 100%;
+        flex: 0 0 20%;
     }
 
     frame[name="body"] {
-        height: auto;
-        width: 100%;
+        flex: 1;
     }
 }
