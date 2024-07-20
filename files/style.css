@@ -101,29 +101,33 @@ legend,th{
     font-size: 14px;
 }
 
-frame {
+frameset, frame {
     border: none;
+    height: 100vh;
+    width: 100vw;
 }
 
-/* Media query for mobile view */
 @media only screen and (max-width: 600px) {
     frameset[rows="50px,*"] {
-        display: block;
         height: 100vh;
         width: 100vw;
+        display: block;
     }
 
     frameset[cols="300px,*"] {
         display: flex;
         flex-direction: row;
         height: calc(100vh - 50px);
+        width: 100%;
     }
 
     frame[name="lbody"] {
         flex: 0 0 20%;
+        height: 100%;
     }
 
     frame[name="body"] {
         flex: 1;
+        height: 100%;
     }
 }
