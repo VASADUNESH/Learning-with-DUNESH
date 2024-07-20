@@ -3,14 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WEB PAGE DESIGN BY DUNESH</title>
-    <link rel="stylesheet" href="files/style.css">
+    <meta http-equiv="refresh" content="5; url=main.html">
+    <title>Learning with DUNESH</title>
+    <style>body {
+        background-color: black;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        font-family: Arial, sans-serif;
+    }
+    
+    .welcome-container {
+        text-align: center;
+    }
+    
+    h1 {
+        color: cyan;
+        font-size: 3em;
+        text-shadow: 2px 2px 5px rgba(0, 255, 255, 0.5);
+        margin: 0;
+    }
+    
+    p {
+        font-size: 1.5em;
+        margin-bottom: 20px;
+    }
+    
+    .loader {
+        border: 8px solid rgba(255, 255, 255, 0.3);
+        border-top: 8px solid cyan;
+        border-radius: 50%;
+        width: 20px;
+        height: 20px;
+        animation: spin 2s linear infinite;
+        display: relative;
+        margin-top: 90px;
+    }
+    
+    @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+    }
+    </style>
 </head>
-<frameset rows="50px,*">
-    <frame src="files/top_nav.html">
-        <frameset cols="300px,*">
-            <frame src="files/C/listC1.html" name="lbody" id="lbody">
-            <frame src="files/C/topics/1-Intro.html" name="body" id="body">
-    </frameset>
-</frameset>
+<body>
+    <div class="welcome-container">
+        <h1>Welcome to Learning with DUNESH</h1>
+        <p>Your journey to mastering coding starts here!</p>
+        
+    </div>
+    <div class="loader"></div>
+</body>
 </html>
