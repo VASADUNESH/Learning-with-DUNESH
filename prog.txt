@@ -41,3 +41,27 @@ int main()
                 <div id="code-3" class="code-display"></div>
                 <details><summary><button class="run"><a href="" onclick="window.open('../CSS/code/ex41.html')" target="_blank" class="run">Run</a></button></summary></details>
             </details>
+
+
+for i in range(1,50):
+    print('''
+    <fieldset>
+        <legend>Question '''+str(i)+''' </legend>
+        <div id="p'''+str(i)+'''" class="code-display program"></div>
+            <details>
+                <summary>Output:</summary>
+                <div id="o'''+str(i)+'''" class="output"> </div>
+            </details>
+    </fieldset>
+
+    ''')
+    
+for i in range(1,50):
+    print('''
+const p'''+str(i)+'''=``;
+const o'''+str(i)+'''=
+``;
+document.getElementById('p2').textContent = p'''+str(i)+''';
+document.getElementById('o2').textContent = o'''+str(i)+''';
+
+    ''')

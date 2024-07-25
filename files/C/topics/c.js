@@ -1161,12 +1161,42 @@ document.getElementById('p32').textContent = p32;
 document.getElementById('oo32').textContent = oo32;
 
 const o33=
-``;
-const p33=``;
-const oo33=``;
+`           1
+         1   1
+       1   2   1
+     1   3   3   1`;
+const p33=`
+#include <stdio.h>
+
+int main() {
+    int r,c,s,n,a;
+    printf("Enter no. of rows: ");scanf("%d",&n);
+    for(r=0;r<n;r++){
+        for(s=1;s<=n-r;s++)printf("  ");
+        for(c=0;c<=r;c++){
+            if(c==0 || c==r)a=1;
+            else a=a*(r-c+1)/c;
+            printf("%4d",a);
+        }printf("\n");
+    }
+
+    return 0;
+}`;
+const oo33=`
+Enter no. of rows: 7
+                 1
+               1   1
+             1   2   1
+           1   3   3   1
+         1   4   6   4   1
+       1   5  10  10   5   1
+     1   6  15  20  15   6   1
+`;
 document.getElementById('o33').textContent = o33;
 document.getElementById('p33').textContent = p33;
 document.getElementById('oo33').textContent = oo33;
+
+
 
 
 
