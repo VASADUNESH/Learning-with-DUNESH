@@ -65,3 +65,23 @@ document.getElementById('p2').textContent = p'''+str(i)+''';
 document.getElementById('o2').textContent = o'''+str(i)+''';
 
     ''')
+
+1. Intro C => History of C,Fundamentals of C,Installation process
+
+2. Tokens & variables
+
+3.Operators
+
+4.C programming structure
+
+5. input and output function => printf(),scanf()
+
+6. control statements => if , if else, if else if, nested if
+
+7.Ternary operator
+
+8.switch
+
+9.loops => while, do while, for, patterns
+
+10.Arrays

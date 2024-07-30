@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Ex72</title>
+	<meta charset="UTF-8">
+	<style>
+	  h2::before{
+		content:'Hi ';
+	  }	
+	  h2::after{
+	     content:'\1F60A';
+	  }
+	  p::first-letter{
+		color:white;
+		background:red;
+		font-size:24px;
+	  }
+	  p::first-line{
+		color:blue;
+	  }
+	  ::selection{
+		background:black;
+		color:yellow;
+	  }
+	  ::placeholder{
+		color:teal;
+		text-align:center;
+	  }
+	  ol li::marker{
+	    color:blue;
+	  }
+	  ul li::marker{
+		color:green;
+		font-size:20px;
+	  }
+	</style>
+  </head>
+  <body>
+	<h3>demo on pseudo elements</h3>
+	<ol>
+		<li>HTML</li> <li>CSS</li> <li>JavaScript</li>
+	</ol>
+	<ul>
+		<li>Java</li> <li>Dot.Net</li> <li>Python</li>
+	</ul>
+	
+	<input type="text" placeholder="enter fullname"> <br>
+	<h2>Siva</h2>
+	<h2>Rama</h2>
+	<h2>Sama</h2>
+	<p>WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details. You should have received a copy of the GNU General Public License along with this program. </p>
+	
+  </body>
+</html>

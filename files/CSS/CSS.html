@@ -347,13 +347,57 @@
         </fieldset>
     </div>
 
-    <div id="flex"></div>
+    <div id="flex">
+        <fieldset><legend>Flex</legend>
+            <li>flex: row or column </li>
+            <li>flex-box & flex-items</li> <br>
+            <h3>Syntax: </h3>
+            <li>display:flex; [#main attribute]</li>
+            <h3>supportive attributes</h3>
+            <li>flex-direction: [row #default/ row-reverse/ column, column-reverse]</li> 
+            <li>gap: 10px;  #in b/w flex items/li>
+            <li>flex-wrap: [no-wrap/ wrap] #keep it one row</li>
+            <li>justify-content: [start/ end/ center/ space-between/ => space/(n-1)] <br> space-around/ => space/n <br>space-evenly =>space/(n+1)</li>
 
-    <div id="grid"></div>
+        </fieldset>
+    </div>
 
-    <div id="tansition"></div>
+    <div id="grid">
+        <fieldset><legend>Grid</legend>
+            <li>N rows x 1 column #default</li>
+            <li>display:grid; [#main attribute]</li>
+            <h3>Syntax: </h3>
+            <li>grid-template-columns: [c1,c2] i.e [100px,200px/    50%,50%/    auto,auto  ]</li>
+            <li>grid-template-rows: [r1,r2] i.e [same as above ]</li> <br>
+            <li>row-gap: 15px ; column-gap: 15px</li> or
+            <li>grid-gap: 15px;</li>
 
-    <div id="transform"></div>
+        </fieldset>
+    </div>
+
+    <div id="transition">
+        <fieldset><legend>Transition</legend>
+            <li>Duration of animation [if only mouse point hover]</li>
+            <li> :<hd>h</hd>over i.e h means hand ... hand over</li>
+            <h3>Syntax: </h3>
+            <li>tag{ transition:2s; }</li> #we can use s,ms i.e seconds or milliseconds
+            <li>tag:hover{ prop:value; }</li>   <br>
+            <li>E.g: </li>
+            <li>transition: width 1s, height 2s;</li>
+            <li>transition: linear 2s;</li>
+        </fieldset>
+    </div>
+
+    <div id="transform">
+        <fieldset><legend>Transform</legend>
+            <li>transform: [ scale(1)/ => 1 represent size of the tag #default scale 100%</li>or
+            <li>scalex(1.2)/ => increase size by 20% only width scaley(1.2)/ scalez(1.5)</li><br>
+            <li>skewx(20deg)/ => bending the tag 20deg, skewy(15deg)/ skewz(20deg)/</li>or
+            <li>skew(10deg,15deg)</li><br>
+            <li>rotatex(60deg)/ rotatey(60deg)/ rotatez(60deg) ]</li><br>
+            <li>transform: translatex(20px)/ => tag will moving, translatey(20px)/ translatez(20px)</li>
+        </fieldset>
+    </div>
 
     
 

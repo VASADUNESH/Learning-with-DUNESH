@@ -1,0 +1,50 @@
+<!--
+selectors
+=> selector is nothing but style rule
+=> selector are used define styles for elements/tags
+means we are customizing existing styles of elements/tags
+=> either in internal or external
+Syn:
+		selector{
+			prop:val;
+			prop:val;
+			......
+		}
+types:
+	    *	    # 	  .			   space	     >
+	universal, id,  class,  tag,   child,   direct child
+	attribute, group,  pseudo classes,  pseudo element
+	  [ ]		 ,		 	:				::
+
+universal
+=> same styles for all elements/tags
+Syn:-	*{
+			prop:value;
+			.....
+		}
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Ex59</title>
+	<meta charset="UTF-8">
+	<style>
+	   *{
+	      border:2px solid red;
+		  color:blue;
+	   }
+	</style>
+  </head>
+  <body>
+	 <h3>demo on universal selector</h3>
+	 <h1>apple</h1>
+	 <span>mango</span>
+	 <p>orange</p>
+	 <div>grape</div>
+	 <ul>
+		<li>html</li>	<li>css</li>	<li>javascript</li>
+		<li>bootstrap</li>
+	 </ul>
+  </body>
+</html>
+

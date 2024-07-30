@@ -1,0 +1,48 @@
+<!-- grid layout  -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Ex68</title>
+	<meta charset="UTF-8">
+	<style>
+	  #grid-box{
+		display:grid;		
+		grid-template-columns:auto auto auto auto;
+		grid-template-rows:40px 40px 40px;
+		/* row-gap:15px;
+		column-gap:15px;	*/
+		grid-gap:12px;
+		background:linear-gradient(to left, red, yellow);
+		padding:5px;
+		font-size:26px;
+	  }	  
+	  /* #grid-box div{ background:cyan; }  */
+	
+	  #grid-box div:nth-child(odd){
+		background:cyan;
+	  }	
+	  #grid-box div:nth-child(even){
+		background:pink;
+	  }	
+	</style>
+  </head>
+  <body>
+	<h3>demo on grid box</h3>
+	<!-- main container (grid box) -->
+	<div id="grid-box">
+		<!-- sub containers (grid items) -->
+		<div>January</div>
+		<div>February</div>
+		<div>March</div>
+		<div>April</div>
+		<div>May</div>
+		<div>June</div>
+		<div>July</div>
+		<div>August</div>
+		<div>September</div>
+		<div>October</div>
+		<div>November</div>
+		<div>December</div>
+	</div>	
+  </body>
+</html>

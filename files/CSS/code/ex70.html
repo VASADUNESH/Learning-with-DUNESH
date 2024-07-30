@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Ex70</title>
+	<meta charset="UTF-8">
+	<style>
+	  img{
+		width:200px;
+		height:200px;
+		margin:50px;
+	  }
+	  #container img:nth-child(1){
+		transform:scaleX(1.2)
+	  }
+	  #container img:nth-child(2){
+		transform:scaleY(1.2)
+	  }	  
+	  #container img:nth-child(3){
+		transform:scale(1.3)
+	  }
+	  #container img:nth-child(4){
+		transform:skewX(20deg);
+	  }	  
+	  #container img:nth-child(5){
+		transform:skewY(-20deg);
+	  }	  	  
+	  #container img:nth-child(6){
+		transform:skew(10deg, 15deg);
+	  }	 
+	  #container img:nth-child(7){
+		transform:rotateX(60deg);
+	  }	 	  
+	  #container img:nth-child(8){
+		transform:rotateY(180deg);
+	  }	 	  	  
+	  #container img:nth-child(9){
+		transform:rotate(-160deg);
+	  }	 	  	
+	  body > img{
+	    /* transform:translateX(800px);
+		transform:translateY(100px);  */
+		transform:translate(500px, 300px);
+	  }
+	</style>
+  </head>
+  <body>
+	<h3>demo on transform</h3>
+	<div id="container">
+	   <img src="images/baby.png">
+	   <img src="images/girl.jpg">
+	   <img src="images/rose.jpeg">
+	   <img src="images/ocean.webp">
+	   <img src="images/nature.png">
+	   <img src="images/moon.png">
+	   <img src="images/snow.jpg">
+	   <img src="images/spring.jpg">
+	   <img src="images/hill.png">
+	</div>
+	<img src="images/tenor.gif">
+	
+  </body>
+</html>

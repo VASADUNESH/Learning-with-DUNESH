@@ -10,18 +10,47 @@ body {
     font-family: 'Times New Roman', Times, serif, sans-serif;
 }
 
-li, a , ul{
+a{
     text-decoration: none;
+    text-decoration: underline skyblue;
     list-style: none;
 }
-
+li{
+    margin-bottom: 5px;
+}
 details{
     cursor: pointer;
 }
-h1,u,h3{
+img{
+    width: 50%;
+    height:250px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+details summary::marker {
+    content: "► "; 
+    font-size: 1em; 
+}
+
+details[open] summary::marker {
+    content: "▼ "; 
+}
+h3{
     color: skyblue;
     font-size: 18px;
     margin-bottom: 10px;
+}
+h1{
+    text-align: center;
+    color: skyblue;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+u{
+    color: skyblue;
 }
 hd{
     font-size: 18px;
@@ -41,16 +70,28 @@ summary{
 fieldset{
     margin:20px 20px;
 }
+p{
+    margin: 20px 2px;
+}
 legend,th{
     color: cyan;
 }
+table{
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
 .btn{
+    
     
     background-color: cyan;
     color: black;
     cursor: pointer;
-    border-radius: 2px;
+    border-radius: 100%;
     font-size: 18px;
+    padding: 10px;
+    margin-top: 50px;
+    margin-left: 50px;
+    
 }
 .program, .code-display{
     background-color: blue;

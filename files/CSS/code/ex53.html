@@ -1,0 +1,61 @@
+<!-- example on CSS Properties  -->		
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Ex53</title>
+	<link rel="icon" href="logo.webp">
+	<meta charset="UTF-8">
+	<style>
+		a{
+		   display:inline-block;
+		   width:110px;
+		   text-align:center;
+		   
+		   color:white;
+		   text-decoration:none;
+		}
+		nav{
+		   width:100%;
+		   background:black;	
+		   text-align:center;
+		}
+		a:hover{
+			color:yellow;
+			background:blue;
+		}
+	</style>
+  </head>
+  <body>
+	<h1>demo on display</h1>
+	<!-- block => inline -->
+	<h1 style="display:inline;">Hi</h1>
+	<img src="images/rose.jpeg" width="35" height="35">
+	<h2 style="display:inline;">Hello</h2>
+	<img src="images/baby.png" width="35" height="35">
+	<br> <br>
+	
+	<!-- inline => block -->
+	<span style="display:block;	background:cyan;">Username</span>
+	<span style="display:block;	background:pink;">Password</span>
+	<br>
+	<!--
+	<nav>
+		inline-block 
+		<a href="">Google</a>
+		<a href="">Youtube</a>
+		<a href="">Facebook</a>
+		<a href="">Insta</a>
+	</nav>	-->
+
+	 <!-- menu bar -->
+	<nav>
+		<a href="ex12.html" target="mf">Home</a>
+		<a href="ex15.html" target="mf">Products</a>
+		<a href="ex17.html" target="mf">Services</a>
+		<a href="ex27.html" target="mf">ContactUs</a>
+	</nav>
+	<br>
+	<iframe style="width:100%; height:600px; background:teal;  border:0;" name="mf" src="ex12.html"></iframe>
+
+  </body>
+</html>	

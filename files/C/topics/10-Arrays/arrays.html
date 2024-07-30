@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../../style.css">
+</head>
+<body>
+    <h1>ARRAYS</h1>
+    <fieldset><legend>Introduction</legend>
+        <ul>
+            <li>It is collection of homogeneous [same type] variables.</li> or
+            <li>Array is nothing but collection of contiguous memory locations, where we can store and manage more than one value of same type under one name.</li>
+            <li>It is a derived data type.</li>
+            <li>It is an implicit / internal pointer.</li>
+            <li>It is a implicit const point</li>
+            <li>It is one of data structure.</li>
+        </ul>
+    </fieldset>
+
+    <fieldset><legend>Advantages:</legend>
+        <ul>
+            <li>Generally to store several values of same type, we have to declare several variables. Here we have to remember all these variable names also. When the program is too big, it is very difficult to remember all the variable names. In this situation, the only solution is array.</li>
+            <li>Array reduce program length.</li>
+            <li>Array minimize the errors.</li>
+            <li>In functions to carry several values of same type at a time, we are using arrays.</li>
+            <li>It allows to arrange our data in a order.</li>
+        </ul>
+    </fieldset>
+    <fieldset><legend>Disadvantage:</legend>
+        <ul>
+            <li>Array size is Constant Positive Integer value. Due to this we are not able to change the array size at run time. Sometimes it causes memory wastage / shortage.</li>
+            <li>In C language we are using 
+                <ol>
+                    <li>One dimensional arrays</li>
+                    <li>Multi dimensional arrays </li>
+                </ol>
+            </li>
+        </ul>
+    </fieldset>
+
+    <fieldset><legend>One dimensional arrays:</legend>
+        <ul>
+            <li>An array with one row and several columns.</li>
+            <li>An array with single subscripting operator [ ] is called one dimensional array.</li>
+            <li>It is an implicit single pointer.</li>
+            <h3>Syntax:</h3>
+            <p>datatype variable[size] = {elements}; </p>
+            <p>Eg: int a[4] = { 9, 3, 1, 8 };</p>
+            
+        </ul>
+    </fieldset>
+
+    <fieldset><legend>Memory allocation for array:</legend>
+        <img src="img/fig1.png" alt="">
+        <li>Array is implicit pointer because of array variable stores base cell [ 0 cell 1st byte ] address. Hence array variable value and 0 cell address both are same.</li>
+    </fieldset>
+
+    <fieldset><legend>Array declaration methods:</legend>
+        <div style="columns: 2">
+            <div>
+                <li>int a[3];	Ok </li>
+                <li>int a[ ]; No int </li>
+                <li>a[3]={1,2,3}; Ok int </li>
+                <li>a[ ]={1,2,3}; Ok int </li>
+                <li>a[0]={1,2,3}; Ok int</li>
+                <li>a[-5]; No </li>
+                <li>int a[5.5]; No </li>
+                <li>int n = 5, a[n]; No</li>
+                <li>int a[3]={10,20}; Ok </li>
+                <li>int a[3]={1, 2, 3, 4};No</li>
+                <li>int a[0]; error</li>
+            
+                <li>#define n 5 /* macro */  int a[n]; Ok </li>
+                <li>const int n=5, a[n]; No  </li>
+                <li>int a[5&gt;3]; => int a[1]; Ok </li>
+                <li>int a[3&lt;2]; => int a[0]; No  </li>
+                <li>int a[2+3]; => int a[5]; Ok  </li>
+                <li>int a[5%3]; => int a[2]; Ok  </li>
+                <li>int a[5%5]; => int a[0]; No  </li>
+                <li>int a[1,2,3]; => error</li>
+                <li>int a[40000]; => 40000 * 2 = 80000 bytes => No </li>
+            </div>
+        </div>
+    </fieldset>
+    <a href="" onclick="window.open('../../reference/22-7 ARRAYS.pdf')" target="_blank" class="btn">Reference 1</a>
+    <a href="" onclick="window.open('../../reference/23-7 arrays.pdf')" target="_blank" class="btn">Reference 2</a>
+
+</body>
+</html>

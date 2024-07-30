@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../../style.css">
+</head>
+<body>
+    <h1><u>C - TOKENS </u></h1>
+    <fieldset>
+        <legend>C-TOKENS</legend>
+        <p>The smallest individual words we are using in developing a c program are called C – Tokens. They are of different types.</p>
+        <ol>
+            <li><h3>Keywords: </h3></li>
+            <p>The system predefined / reserved words are called keywords. Every keyword is having certain meaning and as user we can’t change this meaning. C comes with 32 keywords.</p>
+            <p>Eg:</hd> auto, break, continue, case, const, char, do, double, default, else, enum, extern, float, for, goto, int, long, while, switch, register, typedef, struct, union, static,….</p>
+            <li><h3>Constants:</h3></li>
+            <p>Fixed values are called constants. Constant value should be provided at the time of declaration only. i.e. further initializations not allowed. We can’t change a constant value during program execution</p>
+        </ol>       
+        
+        <details>
+            <summary class="pg">program</summary>
+            <div id="program-code1" class="code-display program"></div>
+            <details>
+                <summary>Output:</summary>
+                <p class="output">pi=3.140000</p>
+            </details>
+        </details>
+
+       
+            
+        
+        <details>
+            <summary class="pg">program</summary>
+            <p class="program">
+                #include &lt; stdio.h &gt; <br><br>
+                    int main()<br>
+                    {<br>
+                    &nbsp&nbsp&nbsp&nbsp    const float pi=3.14;<br>
+                    &nbsp&nbsp&nbsp&nbsp    pi=30;<br>
+                    &nbsp&nbsp&nbsp&nbsp    printf("pi=%f",pi);<br><br>
+                    &nbsp&nbsp&nbsp&nbsp    return 0;<br>
+                    }<br>     
+            </p>
+            <details>
+                <summary>Output:</summary>
+                <p class="output">
+                    Error: <br>Cannot modify a const Object in function main
+                </p>
+            </details>
+        </details> <br>
+        
+        
+
+        <details>
+            <summary>Types of Constants</summary> 
+
+            <h3>Numerical constants:</h3>
+            <li>const int rollno = 1234;</li>
+            <li>const float pi = 3.14;</li>
+            
+            <h3>Character constants:</h3>
+            <li>char name[10]=”Ravi”; string constant</li>
+            <li>char gender=’M’; char constant</li>
+        </details>
+
+        <details>
+            <summary class="pg">program</summary>
+            <p class="program">
+                #include &lt; stdio.h &gt; <br><br>
+                    int main()<br>
+                    {<br>
+                    &nbsp&nbsp&nbsp&nbsp    const float pi=3.14;<br>
+                    &nbsp&nbsp&nbsp&nbsp    int rollno=1234;<br>
+                    &nbsp&nbsp&nbsp&nbsp    const char name[10]="Dunesh";<br>
+                    &nbsp&nbsp&nbsp&nbsp    const char gender='M';<br><br>
+                    
+                    &nbsp&nbsp&nbsp&nbsp    printf("Pi=%f\n",pi);<br>
+                    &nbsp&nbsp&nbsp&nbsp    printf("Rollnp=%d\n",rollno);<br>
+                    &nbsp&nbsp&nbsp&nbsp    printf("Name: %s\n",name);<br>
+                    &nbsp&nbsp&nbsp&nbsp    printf("Gender: %c\n",gender);<br><br>
+
+                    &nbsp&nbsp&nbsp&nbsp    return 0;<br>
+                    }<br>     
+            </p>
+            <details>
+                <summary>Output:</summary>
+                <p class="output">
+                    pi=3.14000 <br>
+                    Rollno=1234 <br>
+                    name: Dunesh <br>
+                    Gender: M <br>
+                </p>
+            </details>
+        </details> <br>
+        
+        <li><hd><u>3. Identifiers:</u></hd>Identifiers are nothing but names of variables, functions, files etc.</li>
+        <details>
+            <summary>Identifier naming rules:</summary>
+            <ol>
+                <li>Name should have to start with alphabet or underscore only [ _ ].</li>
+                <li>Numbers allowed but not at first position.</li>
+                <li>Spaces not allowed.</li>
+                <li>No special char except underscore.</li>
+                <li>Keywords not allowed.</li>
+                <li>Identifiers are case sensitive i.e. lower and upper are different.</li>
+                <li>Duplicate names are not allowed in same function or block{ }.</li>
+                <li>Name may contain up to 32 characters and excess characters ignored by the compiler.</li>
+            </ol>
+        </details>
+    </fieldset> 
+
+    <fieldset>
+        <legend>Data types</legend>
+    <li>Data type determines the type of value we are going to store in our computer. To store anything in our computer, we should have to allocate the memory. This memory allocation is depended on the data type we are using</li>
+    <details>
+        <summary>Data type determines the properties such as</summary>
+        <ol>
+            <li>No of bytes</li>
+            <li>Range</li>
+            <li>Type of value</li>
+        </ol>
+    </details> 
+
+    <details>
+        <summary>Total data types are divided into 3 types.</summary>
+        
+        <ol>
+            <li><details><summary>Primitive data types: </summary>
+                <p>These are the regular data types we are using in our c programs.</p>
+                <table border=" 1 solid white">
+                    <tr> <th>Data type</th> <th>Bytes</th> <th>Conversion Character <br>/ format specifier</th> <th>Strong Range</th></tr>
+                    <tr> <td>int/ <br> signed int/ <br> short int</td> <td>2</td> <td>%d</td><td>-32768 to +32767</td></tr>        
+                    <tr> <td>unsigned int</td> <td>2</td> <td>%u</td> <td>0 to 65535</td></tr>
+                    <tr> <td>long int</td> <td>4</td><td>%ld</td> <td>-2147483648 to 2147483647</td></tr>
+                    <tr> <td>unsigned long int</td> <td>4</td><td>%lu</td> <td>0 to 4294967295</td></tr>
+                    <tr> <td>float</td><td>4</td> <td>%f</td> <td>3.4*10<sup>-38</sup> to 3.4*10<sup>+38</sup></td></tr>
+                    <tr><td>double</td> <td>8</td> <td>%lf</td> <td>1.7*10<sup>-308</sup> to 1.7*10<sup>+308</sup></td></tr>
+                    <tr><td>long double</td><td>10</td><td>&Lf</td> <td>3.4*10<sup>-4932</sup> to 1.7*10<sup>+4932</sup></td></tr>
+                    <tr><td>char[10] <br> (string)</td><td>1</td><td>%c</td><td>1 Character <br> signed char [-128 to +127] <br> unsigned char [0 to 255]</td></tr>
+                    <tr><td>Void <br> [empty data type]</td><td></td><td></td><td>Nothing</td></tr>
+                </table>
+                </details></li><br>
+                
+                <li><details><summary>2. Derived data types</summary>
+                    <p>They are derived from Primitive data types.</p><br>
+                    <ol>
+                        <li>Array [Non-primitive]</li>
+                        <li>Pointer</li>
+                        <li>Function</li>
+                    </ol>
+                </details></li> <br>
+                <li><details><summary>3. User defined data types</summary>
+                    <p>These are the data types created by the user.</p>
+                    <ol>
+                        <li>Structure</li>
+                        <li>Union</li>
+                        <li>enum</li>
+                    </ol>
+                    </details></li>
+                    </details>
+        </ol>
+        </fieldset> 
+
+
+
+
+        <fieldset>
+            <legend>String:</legend>
+            <ol>
+                <li>A group of characters is called string</li>
+                <li>It is alpha-numeric. i.e in a sting we can store both alphabets, numbers and special characters. <br> Eg: char city[]="Hyd-16"</li>
+                <li>It is a char array</li> <br>
+                <li> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ram bytes
+                <li style="display: flex;">city <table border="1"><tr><td>H</td><td>y</td><td>d</td><td>-</td><td>1</td><td>6</td><td><hd>\0</hd></td></tr></table> NULL Char</li></li><br>
+            
+            </ol>
+            <details>
+                <summary>Note:</summary>
+                <ol>
+                    <li>One byte should be left for null char. Otherwise we are getting garbage values.</li>
+                    <li>String variable size never smaller than string. Otherwise we are getting error.</li>
+                    <li>We can’t copy a string using = operator. We have to use strcpy() available in <string.h></li>
+                    <li>We can’t compare two strings using == operator. We have to use strcmp().</li>
+                </ol>
+            </details>
+        </fieldset> 
+
+
+
+
+
+
+    <a href="" onclick="window.open('../../reference/7-6 tokens.pdf')" target="_blank" class="btn">Reference</a>    
+
+
+    <script>
+        const programCode1 = `
+#include <stdio.h>
+
+int main()
+{
+    const float pi = 3.14;
+    printf("pi = %f", pi);
+
+    return 0;
+}
+        `;
+        document.getElementById('program-code1').textContent = programCode1;
+    </script>
+   
+
+
+</body>
+</html>
