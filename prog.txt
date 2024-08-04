@@ -61,8 +61,8 @@ for i in range(1,50):
 const p'''+str(i)+'''=``;
 const o'''+str(i)+'''=
 ``;
-document.getElementById('p2').textContent = p'''+str(i)+''';
-document.getElementById('o2').textContent = o'''+str(i)+''';
+document.getElementById(/''''+str(i)+'''/').textContent = p'''+str(i)+''';
+document.getElementById(/''''+str(i)+'''/').textContent = o'''+str(i)+''';
 
     ''')
 
