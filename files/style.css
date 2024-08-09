@@ -3,11 +3,13 @@
     color: white;
     scroll-behavior:smooth;
     
+    
 }
 body {
     margin: 5px;
     padding: 2px;
     font-family: 'Times New Roman', Times, serif, sans-serif;
+    
 }
 
 a{
@@ -60,7 +62,7 @@ hd{
     color: yellow !important;
 }
 mark{
-    background-color: orange;
+    background-color: yellow;
     color: black;
 }
 summary{
@@ -79,6 +81,7 @@ legend,th{
 table{
     margin-left: 20px;
     margin-bottom: 20px;
+    width: 80%;
 }
 .btn{
     
