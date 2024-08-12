@@ -28,19 +28,38 @@
     <p>datatype  variable[=value], </p>
     <p>Eg: int id=1234, children=2; char  name[ ]=”Ravi”, gender=’M’; float height = 5.8; </p>
 
-    <fieldset>
-        <legend>Program</legend>
+    <details>
+        <summary>Program</summary>
         <div id="p1" class="code-display program"></div>
-            <details>
-                <summary>Output:</summary>
-                <div id="o1" class="output"> </div>
-            </details>
+                <details>
+                    <summary>Output:</summary>
+                    <div id="o1" class="output"> </div>
+                </details>
+    </details>
     </fieldset>
+    <fieldset><legend>Types of variables</legend>
+        <p>Basically the variables divided into 2 types.</p>
+        <ol>
+            <li>Local variables</li>
+            <li>Global variables</li>
+        </ol>
+        <table border="1">
+            <tr><th></th><th>Local variables</th><th>Global variables</th></tr>
+            <tr><th>Declaration</th><td>Within function /{} </td><td>Top of the program</td></tr>
+            <tr><th>Storage area</th><td>Stack area </td><td>Data area</td></tr>
+            <tr><th>Initial values[auto values]</th><td>Garbage values</td><td>Int-0, float-0.000000, char-blank</td></tr>
+            <tr><th>Scope [availability]</th><td>Within fun/{ } only</td><td>Anywhere</td></tr>
+            <tr><th>Life time [active in memory]</th><td>Until fun / {} execution</td><td>Until main() closed <br>Tot program closed</td></tr>
+
+        </table>
 
     </fieldset>
+    
 
 
-    <a href="" onclick="window.open('../../reference/22-6 variables.pdf')" target="_blank" class="btn">Reference</a>    
+
+    <a href="" onclick="window.open('../../reference/22-6 variables.pdf')" target="_blank" class="btn">Reference 1</a>    
+    <a href="" onclick="window.open('../../reference/24-6 variables.pdf')" target="_blank" class="btn">Reference 2</a>    
 
 </body>
 </html>

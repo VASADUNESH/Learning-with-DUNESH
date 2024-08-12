@@ -66,6 +66,15 @@ document.getElementById(/''''+str(i)+'''/').textContent = o'''+str(i)+''';
 
     ''')
 
+<details>
+        <summary>Program</summary>
+        <div id="p1" class="code-display program"></div>
+                <details>
+                    <summary>Output:</summary>
+                    <div id="o1" class="output"> </div>
+                </details>
+    </details>
+
 1. Intro C => History of C,Fundamentals of C,Installation process
 
 2. Tokens & variables
@@ -85,3 +94,6 @@ document.getElementById(/''''+str(i)+'''/').textContent = o'''+str(i)+''';
 9.loops => while, do while, for, patterns
 
 10.Arrays
+
+
+Update the programs from variables

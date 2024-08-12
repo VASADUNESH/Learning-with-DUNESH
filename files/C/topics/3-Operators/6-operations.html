@@ -24,572 +24,193 @@
         </ol>
     </details>
     </fieldset> 
-    <p>Based on operation the operators divided into several types.</p>
+    <p style="margin-left: 20px;">Based on operation the operators divided into several types.</p>
     <fieldset id="Assignment_operator">
         <legend>Assignment operator [ = ]: </legend>
         <li >
             It copies the value on its right side into the variable on its left side. In assignment operation, the left side operand should be a variable. i.e. expressions not allowed on left side.<br> <br>Eg: <br>a=10;<br>b=1.2;<br>c=’X’;<br>d=”abc”; => Error => string copy not allowed.<br>e=f=g=100;<br>c=10+20;<br>10+20=30; ==> 30=30 => Error => 30 is constant
-            <fieldset>
-                <legend>Program </legend>
+            <details>
+                <summary>Program</summary>
                 <div id="p1" class="code-display program"></div>
-                    <details>
-                        <summary>Output:</summary>
-                        <div id="o1" class="output"> </div>
-                    </details>
-            </fieldset>
+                        <details>
+                            <summary>Output:</summary>
+                            <div id="o1" class="output"> </div>
+                        </details>
+            </details>
 
-            <fieldset>
-                <legend>Program</legend>
+            <details>
+                <summary>Program</summary>
                 <div id="p2" class="code-display program"></div>
-                    <details>
-                        <summary>Output:</summary>
-                        <div id="o2" class="output"> </div>
-                    </details>
-            </fieldset>
+                        <details>
+                            <summary>Output:</summary>
+                            <div id="o2" class="output"> </div>
+                        </details>
+            </details>
 
-            <fieldset>
-                <legend>Program</legend>
+            <details>
+                <summary>Program</summary>
                 <div id="p3" class="code-display program"></div>
-                    <details>
-                        <summary>Output:</summary>
-                        <div id="o3" class="output"> </div>
-                    </details>
-            </fieldset>
+                        <details>
+                            <summary>Output:</summary>
+                            <div id="o3" class="output"> </div>
+                        </details>
+            </details>
         </li>
     </fieldset>
     
-    <fieldset><legend>Arithmetic operators [ +, -, *, %, / ]: </legend>
+    <fieldset id="Arithmetic operators"><legend>Arithmetic operators [ +, -, *, %, / ]: </legend>
         <p>They are used to perform mathematical calculations. </p>
         <p>Eg: a+b, a-b, a*b,.. </p>
         <h3>Note:</h3><p>if the divisor is bigger than dividend then dividend is the answer. </p>
-        <fieldset>
-            <legend>Program </legend>
+        <details>
+            <summary>Program</summary>
             <div id="p4" class="code-display program"></div>
-                <details>
-                    <summary>Output:</summary>
-                    <div id="o4" class="output"> </div>
-                </details>
-        </fieldset>
+                    <details>
+                        <summary>Output:</summary>
+                        <div id="o4" class="output"> </div>
+                    </details>
+        </details>
     
         
     
-        <fieldset>
-            <legend>Program </legend>
+        <details>
+            <summary>Program</summary>
             <div id="p5" class="code-display program"></div>
-                <details>
-                    <summary>Output:</summary>
-                    <div id="o5" class="output"> </div>
-                </details>
-        </fieldset>
+                    <details>
+                        <summary>Output:</summary>
+                        <div id="o5" class="output"> </div>
+                    </details>
+        </details>
     
         
     
-        <fieldset>
-            <legend>Program </legend>
+        <details>
+            <summary>Program</summary>
             <div id="p6" class="code-display program"></div>
-                <details>
-                    <summary>Output:</summary>
-                    <div id="o6" class="output"> </div>
-                </details>
-        </fieldset>
+                    <details>
+                        <summary>Output:</summary>
+                        <div id="o6" class="output"> </div>
+                    </details>
+        </details>
     
         
     
-        <fieldset>
-            <legend>Program </legend>
+        <details>
+            <summary>Program</summary>
             <div id="p7" class="code-display program"></div>
-                <details>
-                    <summary>Output:</summary>
-                    <div id="o7" class="output"> </div>
-                </details>
-        </fieldset>
+                    <details>
+                        <summary>Output:</summary>
+                        <div id="o7" class="output"> </div>
+                    </details>
+        </details>
     </fieldset>
 
-    <fieldset><legend></legend></fieldset>
-
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    <fieldset>
-        <legend>Program 8 </legend>
-        <div id="p8" class="code-display program"></div>
-            <details>
-                <summary>Output:</summary>
-                <div id="o8" class="output"> </div>
-            </details>
+    <fieldset id="Relational operators"><legend>Relational operators [ == (comparison), <, >, <=, >=, != (not equal) ]:</legend>
+        <p>They are used to check the given condition or expression 
+            is true or false. If condition true always it return 1 and 
+            condition false it return 0.
+        </p>
     </fieldset>
 
-    
-
-    <fieldset>
-        <legend>Program 9 </legend>
-        <div id="p9" class="code-display program"></div>
-            <details>
-                <summary>Output:</summary>
-                <div id="o9" class="output"> </div>
-            </details>
+    <fieldset id="Operator precedence / Operator priority"><legend>Operator precedence / Operator priority</legend>
+        <h3>(Association of operators)</h3>
+        <ol>
+            <li>()</li>
+            <li>+, - , ! (sign operators, unary operators)</li>
+            <li>++, -- (pre increment & decrement)</li>
+            <li>*, / , %</li>
+            <li>+, - (Binary)</li>
+            <li>= =, !=</li>
+            <li>&&</li>
+            <li>||</li>
+            <li>? : (ternary operator)</li>
+            <li>=</li>
+            <li>++, -- ( Post increment & decrement )</li>
+            <li>, (comma)</li>
+        </ol>
     </fieldset>
 
+    <fieldset><legend>Logical operators:</legend>
+        <ul>
+            <li>&& - logical and</li>
+            <li>|| - Logical or</li>
+            <li>! – Logical not</li>
+        </ul>
+        <h3>Note:</h3>
+        <p>In && operator when left expression is false then right 
+            exp not checked.</p>
+        <p>    In || operator when left expression is true then right exp 
+            not checked</p>
+    </fieldset>
     
-
-    <fieldset>
-        <legend>Program 10 </legend>
-        <div id="p10" class="code-display program"></div>
-            <details>
-                <summary>Output:</summary>
-                <div id="o10" class="output"> </div>
-            </details>
+    <fieldset id="Increment & Decrement operators"><legend>Increment & Decrement operators [ ++ / -- ]:</legend>
+        <p>They are used to increment / decrement a variable value 
+            by 1. <br> <br>
+            Eg: <br>
+            int a=3, b=9; <br>
+            a++ => i.e. a=a+1 => a=4 <br>
+            b-- => i.e. b=b-1 => b=8</p>
     </fieldset>
 
-    
-
-    <fieldset>
-        <legend>Program 11 </legend>
-        <div id="p11" class="code-display program"></div>
-            <details>
-                <summary>Output:</summary>
-                <div id="o11" class="output"> </div>
-            </details>
+    <fieldset id="Compound assignment / shorthand operators:"><legend>Compound assignment / shorthand operators[+=, -=, *=, %=, /=, <<=, >>=, ~=,…]:</legend>
+        <p>Here we are using assignment operator with the 
+            combination of other operators as follows.</p>
+        
+        <p>Eg: <br>
+            int a=10, b=2; <br>
+            float c=5; <br>
+            a+=4; i.e. a=a+4 => 10+4 => a=14 <br>
+            b*=3; i.e. b=b*3 => 2*3 => b=6 <br>
+            c/=2; i.e. c=c/2 => 5/2 => c=2.500000
+        </p>
     </fieldset>
 
-    
-
-    <fieldset>
-        <legend>Program 12 </legend>
-        <div id="p12" class="code-display program"></div>
-            <details>
-                <summary>Output:</summary>
-                <div id="o12" class="output"> </div>
-            </details>
+    <fieldset id="sizeof()"><legend>sizeof()</legend>
+        <p>sizeof( ) operator: It returns the no of bytes 
+            taken by a variable / data type / value</p>
     </fieldset>
-
     
-
-    <fieldset>
-        <legend>Program 13 </legend>
-        <div id="p13" class="code-display program"></div>
-            <details>
-                <summary>Output:</summary>
-                <div id="o13" class="output"> </div>
-            </details>
-    </fieldset>
-
-    
-
-    <fieldset>
-        <legend>Program 14 </legend>
-        <div id="p14" class="code-display program"></div>
-            <details>
-                <summary>Output:</summary>
-                <div id="o14" class="output"> </div>
-            </details>
-    </fieldset>
-
-    
-
-    <fieldset>
-        <legend>Program 15 </legend>
-        <div id="p15" class="code-display program"></div>
-            <details>
-                <summary>Output:</summary>
-                <div id="o15" class="output"> </div>
-            </details>
+    <fieldset id="Bitwise operator"><legend>Bitwise operator</legend>
+        <p>Bitwise operator’s works on bits. 
+            Turbo-c is a 16 bit compiler. Due to this bitwise
+            operations are limited to 16 bits only [20
+            to 215].
+            Bitwise operators operate integer type values only.
+            We have to calculate only the on bits [ 1 ]</p>
+            <p>When the first bit[Sign bit] is 1 then the number is 
+                Negative and it is 0 then the number is positive.
+                They are very much used in system software 
+                development</p>
+        <h3>Note: </h3><p>Bitwise operator is low level feature.</p>
+        <p>C-Language supports following bitwise operators. <br>
+            & -Bitwise and <br>
+            | - Bitwise or<br>
+            ^ - XOR ==> Exclusive OR<br>
+            ~ - Compliment operator<br>
+            << - Left shift operator<br>
+            >> - Right shift operator<br>
+            & - Bitwise and: In this both bits are 1’s then result <br>
+            bit is 1. Otherwise result bit is 0.<br>
+            Eg: 25 & 15 = 9
+            </p>
     </fieldset>
 
     
 
-    <fieldset>
-        <legend>Program 16 </legend>
-        <div id="p16" class="code-display program"></div>
-            <details>
-                <summary>Output:</summary>
-                <div id="o16" class="output"> </div>
-            </details>
-    </fieldset>
+    
 
     
 
-    <fieldset>
-        <legend>Program 17 </legend>
-        <div id="p17" class="code-display program"></div>
-            <details>
-                <summary>Output:</summary>
-                <div id="o17" class="output"> </div>
-            </details>
-    </fieldset>
-
     
 
-    <fieldset>
-        <legend>Program 18 </legend>
-        <div id="p18" class="code-display program"></div>
-            <details>
-                <summary>Output:</summary>
-                <div id="o18" class="output"> </div>
-            </details>
-    </fieldset>
+    <a href="" onclick="window.open('../../reference/10-6 operators.pdf')" target="_blank" class="btn">Reference: operators</a>
+    <a href="" onclick="window.open('../../reference/11-6 relational & logical operators (1).pdf')" target="_blank" class="btn">Reference :relational & logical operators</a>
+    <a href="" onclick="window.open('../../reference/12-6 ++ &-- operataors.pdf')" target="_blank" class="btn">Reference: ++ &-- operataors</a>
+    <a href="" onclick="window.open('../../reference/13-6 incr and decr.pdf')" target="_blank" class="btn">Reference: incr and decr</a>
+    <a href="" onclick="window.open('../../reference/14-6 Compound assignment.pdf')" target="_blank" class="btn">Reference: Compound assignment</a>
+    <a href="" onclick="window.open('../../reference/15-6 bitwise.pdf')" target="_blank" class="btn">Reference: bitwise</a>
+    <a href="" onclick="window.open('../../reference/17-6 c bitwise op.pdf')" target="_blank" class="btn">Reference: bitwise op</a>
 
-    
-
-    <fieldset>
-        <legend>Program 19 </legend>
-        <div id="p19" class="code-display program"></div>
-            <details>
-                <summary>Output:</summary>
-                <div id="o19" class="output"> </div>
-            </details>
-    </fieldset>
-
-    
-
-    <fieldset>
-        <legend>Program 20 </legend>
-        <div id="p20" class="code-display program"></div>
-            <details>
-                <summary>Output:</summary>
-                <div id="o20" class="output"> </div>
-            </details>
-    </fieldset>
-
-    
-
-    <fieldset>
-        <legend>Program 21 </legend>
-        <div id="p21" class="code-display program"></div>
-            <details>
-                <summary>Output:</summary>
-                <div id="o21" class="output"> </div>
-            </details>
-    </fieldset>
-
-    
-
-    <fieldset>
-        <legend>Program 22 </legend>
-        <div id="p22" class="code-display program"></div>
-            <details>
-                <summary>Output:</summary>
-                <div id="o22" class="output"> </div>
-            </details>
-    </fieldset>
-
-    
-
-    <fieldset>
-        <legend>Program 23 </legend>
-        <div id="p23" class="code-display program"></div>
-            <details>
-                <summary>Output:</summary>
-                <div id="o23" class="output"> </div>
-            </details>
-    </fieldset>
-
-    
-
-    <fieldset>
-        <legend>Program 24 </legend>
-        <div id="p24" class="code-display program"></div>
-            <details>
-                <summary>Output:</summary>
-                <div id="o24" class="output"> </div>
-            </details>
-    </fieldset>
-
-    
-
-    <fieldset>
-        <legend>Program 25 </legend>
-        <div id="p25" class="code-display program"></div>
-            <details>
-                <summary>Output:</summary>
-                <div id="o25" class="output"> </div>
-            </details>
-    </fieldset>
-
-    
-
-    <fieldset>
-        <legend>Program 26 </legend>
-        <div id="p26" class="code-display program"></div>
-            <details>
-                <summary>Output:</summary>
-                <div id="o26" class="output"> </div>
-            </details>
-    </fieldset>
-
-    
-
-    <fieldset>
-        <legend>Program 27 </legend>
-        <div id="p27" class="code-display program"></div>
-            <details>
-                <summary>Output:</summary>
-                <div id="o27" class="output"> </div>
-            </details>
-    </fieldset>
-
-    
-
-    <fieldset>
-        <legend>Program 28 </legend>
-        <div id="p28" class="code-display program"></div>
-            <details>
-                <summary>Output:</summary>
-                <div id="o28" class="output"> </div>
-            </details>
-    </fieldset>
-
-    
-
-    <fieldset>
-        <legend>Program 29 </legend>
-        <div id="p29" class="code-display program"></div>
-            <details>
-                <summary>Output:</summary>
-                <div id="o29" class="output"> </div>
-            </details>
-    </fieldset>
-
-    
-
-    <fieldset>
-        <legend>Program 30 </legend>
-        <div id="p30" class="code-display program"></div>
-            <details>
-                <summary>Output:</summary>
-                <div id="o30" class="output"> </div>
-            </details>
-    </fieldset>
-
-    
-
-    <fieldset>
-        <legend>Program 31 </legend>
-        <div id="p31" class="code-display program"></div>
-            <details>
-                <summary>Output:</summary>
-                <div id="o31" class="output"> </div>
-            </details>
-    </fieldset>
-
-    
-
-    <fieldset>
-        <legend>Program 32 </legend>
-        <div id="p32" class="code-display program"></div>
-            <details>
-                <summary>Output:</summary>
-                <div id="o32" class="output"> </div>
-            </details>
-    </fieldset>
-
-    
-
-    <fieldset>
-        <legend>Program 33 </legend>
-        <div id="p33" class="code-display program"></div>
-            <details>
-                <summary>Output:</summary>
-                <div id="o33" class="output"> </div>
-            </details>
-    </fieldset>
-
-    
-
-    <fieldset>
-        <legend>Program 34 </legend>
-        <div id="p34" class="code-display program"></div>
-            <details>
-                <summary>Output:</summary>
-                <div id="o34" class="output"> </div>
-            </details>
-    </fieldset>
-
-    
-
-    <fieldset>
-        <legend>Program 35 </legend>
-        <div id="p35" class="code-display program"></div>
-            <details>
-                <summary>Output:</summary>
-                <div id="o35" class="output"> </div>
-            </details>
-    </fieldset>
-
-    
-
-    <fieldset>
-        <legend>Program 36 </legend>
-        <div id="p36" class="code-display program"></div>
-            <details>
-                <summary>Output:</summary>
-                <div id="o36" class="output"> </div>
-            </details>
-    </fieldset>
-
-    
-
-    <fieldset>
-        <legend>Program 37 </legend>
-        <div id="p37" class="code-display program"></div>
-            <details>
-                <summary>Output:</summary>
-                <div id="o37" class="output"> </div>
-            </details>
-    </fieldset>
-
-    
-
-    <fieldset>
-        <legend>Program 38 </legend>
-        <div id="p38" class="code-display program"></div>
-            <details>
-                <summary>Output:</summary>
-                <div id="o38" class="output"> </div>
-            </details>
-    </fieldset>
-
-    
-
-    <fieldset>
-        <legend>Program 39 </legend>
-        <div id="p39" class="code-display program"></div>
-            <details>
-                <summary>Output:</summary>
-                <div id="o39" class="output"> </div>
-            </details>
-    </fieldset>
-
-    
-
-    <fieldset>
-        <legend>Program 40 </legend>
-        <div id="p40" class="code-display program"></div>
-            <details>
-                <summary>Output:</summary>
-                <div id="o40" class="output"> </div>
-            </details>
-    </fieldset>
-
-    
-
-    <fieldset>
-        <legend>Program 41 </legend>
-        <div id="p41" class="code-display program"></div>
-            <details>
-                <summary>Output:</summary>
-                <div id="o41" class="output"> </div>
-            </details>
-    </fieldset>
-
-    
-
-    <fieldset>
-        <legend>Program 42 </legend>
-        <div id="p42" class="code-display program"></div>
-            <details>
-                <summary>Output:</summary>
-                <div id="o42" class="output"> </div>
-            </details>
-    </fieldset>
-
-    
-
-    <fieldset>
-        <legend>Program 43 </legend>
-        <div id="p43" class="code-display program"></div>
-            <details>
-                <summary>Output:</summary>
-                <div id="o43" class="output"> </div>
-            </details>
-    </fieldset>
-
-    
-
-    <fieldset>
-        <legend>Program 44 </legend>
-        <div id="p44" class="code-display program"></div>
-            <details>
-                <summary>Output:</summary>
-                <div id="o44" class="output"> </div>
-            </details>
-    </fieldset>
-
-    
-
-    <fieldset>
-        <legend>Program 45 </legend>
-        <div id="p45" class="code-display program"></div>
-            <details>
-                <summary>Output:</summary>
-                <div id="o45" class="output"> </div>
-            </details>
-    </fieldset>
-
-    
-
-    <fieldset>
-        <legend>Program 46 </legend>
-        <div id="p46" class="code-display program"></div>
-            <details>
-                <summary>Output:</summary>
-                <div id="o46" class="output"> </div>
-            </details>
-    </fieldset>
-
-    
-
-    <fieldset>
-        <legend>Program 47 </legend>
-        <div id="p47" class="code-display program"></div>
-            <details>
-                <summary>Output:</summary>
-                <div id="o47" class="output"> </div>
-            </details>
-    </fieldset>
-
-    
-
-    <fieldset>
-        <legend>Program 48 </legend>
-        <div id="p48" class="code-display program"></div>
-            <details>
-                <summary>Output:</summary>
-                <div id="o48" class="output"> </div>
-            </details>
-    </fieldset>
-
-    
-
-    <fieldset>
-        <legend>Program 49 </legend>
-        <div id="p49" class="code-display program"></div>
-            <details>
-                <summary>Output:</summary>
-                <div id="o49" class="output"> </div>
-            </details>
-    </fieldset>
-
-    
-
-
-
-
-
-    <a href="" onclick="window.open('../../reference/10-6 operators.pdf')" target="_blank" class="btn">Reference</a>
-    <br><br><br>
 
 
 </body>

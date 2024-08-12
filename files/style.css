@@ -40,7 +40,7 @@ details summary::marker {
 details[open] summary::marker {
     content: "▼ "; 
 }
-h3{
+h3,th{
     color: skyblue;
     font-size: 18px;
     margin-bottom: 10px;
